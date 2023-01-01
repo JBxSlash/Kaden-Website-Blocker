@@ -1,0 +1,68 @@
+{
+  "manifest_version": 2,
+  "name": "Kaden",
+  "version": "1.0",
+  "description": "The one and only website blocker you will need.",
+  "permissions": ["notifications","webRequest", "webRequestBlocking","<all_urls>","activeTab","storage","tabs"],
+  "background": {
+    "scripts": ["bgs.js"]
+  },
+"web_accessible_resources": ["main.html"],
+"browser_action": {
+    "default_icon": {
+      "64": "favicon.png",
+      "64": "favicon.png"
+    },
+    "default_title": "Kaden",
+"default_popup": "/popup.html"
+  },
+"icons": {
+    "64": "favicon.png",
+    "64": "favicon.png"
+  },
+"blocking": {
+  "cookies": [
+    {
+      "name": "_ga"
+    },
+    {
+      "name": "_gid"
+    },
+
+    {
+      "name": "_gat"
+    },
+    {
+      "name": "_fpb"
+    },
+    {
+      "name": "_gcl_au"
+    },
+    {
+      "name": "_fbp"
+    },
+    {
+      "name": "_gac_<property-id>"
+    },
+    {
+      "name": "_hjid"
+    },
+    {
+      "name": "_hjTLDTest"
+    },
+    {
+      "name": "_hjAbsoluteSessionInProgress"
+    },
+    {
+      "name": "_hstc"
+    },
+    {
+      "name": "_hssc"
+    },
+    {
+      "name": "_hssrc"
+    }
+
+  ]
+}
+}
